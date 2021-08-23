@@ -1,4 +1,10 @@
 <template>
-    <!-- <h2> titre deux </h2> -->
-    <NuxtLink to="/">to Home page</NuxtLink>
+ <main>
+    <NuxtLogo/>
+    <Menu/>
+    <center>
+        <p>page deux</p>
+    </center>
+    
+ </main>
 </template>
