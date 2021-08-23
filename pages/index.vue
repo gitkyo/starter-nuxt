@@ -3,11 +3,12 @@
     <center>
 
     <NuxtLogo/>
-    <h1>Home page</h1>
-    <NuxtLink to="/fun">
-      <button type="button" class="btn btn-success">Voir page deux</button>        
-    </NuxtLink>
-    <a class='btn btn-primary' href="https://nuxtjs.org">Lien vers une page externe</a>
+    <Menu/>
+    <Titre/>
+    
+   
+    <!-- <h1>Home page</h1> -->
+    <a class='btn btn-primary' href="https://github.com/gitkyo/starter-nuxt">Mon dépot github</a>
 
     </center>
   </main>
