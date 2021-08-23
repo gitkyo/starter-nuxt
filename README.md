@@ -17,6 +17,9 @@ $ npm run start
 $ npm run generate
 ```
 
+# DEMO
+https://starter-nuxt.netlify.app/
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories
