@@ -6,12 +6,14 @@
             </NuxtLink>
         </li>
         <li class="nav-item">
-            <NuxtLink to="/fun">
+            <NuxtLink to="/pagedeux">
                 <a class="nav-link" href="#">Page deux</a>
             </NuxtLink>
         </li>
     <li class="nav-item">
-    <a class="nav-link" href="#">Page trois</a>
+         <NuxtLink to="/pagetrois">
+            <a class="nav-link" href="#">Page trois</a>
+        </NuxtLink>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="#">Page quatre</a>
