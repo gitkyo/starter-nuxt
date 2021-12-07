@@ -4,6 +4,7 @@
 
 <style>
 h1.montitle {
- color:green;
+ color:rgb(98, 36, 197);
+ 
 }
 </style>
