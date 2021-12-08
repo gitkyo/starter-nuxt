@@ -2,14 +2,32 @@
     <main>
         <NuxtLogo/>
             <Menu/>
+
+            <!-- todo : 23:42 : https://youtu.be/dY85oo6-9K0 -->
         <center>
             <h1>Page trois</h1>
 
+            <!-- liste de prodtuis depuis le tableau d'objet ci dessous -->
+            <h2>liste de produits depuis le tableau d'objet</h2>
             <ul id="v-for-object" class="demo">
                 <li v-for="produit in produits" :key='produit'>
                     {{ produit.nom }} - {{ produit.prix }}
                 </li>
             </ul>
+
+            <!-- ici j'appelle des composants produit que je définit à la vole -->
+            <h2>liste de produits de type composants définit à la vole</h2>
+            <Produit nom="salade" prix="2" />
+            <Produit nom="tarte" prix="5" />
+
+
+            <h2>liste de produits de type composant définit au travers de la liste d'objets</h2>
+            <Produit v-for="produit in produits" :key="produit.id" :nom="produit.nom" :prix="produit.prix"  />
+
+
+            <h2>Liste de produits de type composant appartenant à un autre obj</h2>
+            <Produit v-for="produit in commandes" :key="produit.id" :nom="produit.nom" :prix="produit.prix" />
+
 
 
         </center>
@@ -18,7 +36,12 @@
 
 
 <script> 
+import Produit from '@/components/Produit.vue'
+
 export default {
+    components:{
+        Produit
+    },
     data() {       
         return {
             produits: [
@@ -26,6 +49,9 @@ export default {
                 {id : 2, nom : 'burger', prix : 4.0},
                  {id : 2, nom : 'sandwich', prix : 5.0},
             ],
+            commandes:[
+                { id : 2, nom : 'burger', prix : 4.0  }
+            ]
             
         }
     }    
