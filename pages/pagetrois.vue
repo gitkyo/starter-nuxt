@@ -47,10 +47,11 @@ export default {
             produits: [
                 {id : 0, nom : 'pizza', prix : 3.0},
                 {id : 2, nom : 'burger', prix : 4.0},
-                 {id : 2, nom : 'sandwich', prix : 5.0},
+                 {id : 3, nom : 'sandwich', prix : 5.0},
             ],
             commandes:[
-                { id : 2, nom : 'burger', prix : 4.0  }
+                { id : 2, nom : 'burger', prix : 4.0  },
+                { id : 4, nom : 'tarte', prix : 1.0  }
             ]
             
         }
