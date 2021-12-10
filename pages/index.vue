@@ -10,6 +10,8 @@
     <!-- <h1>Home page</h1> -->
     <a class='btn btn-primary' href="https://github.com/gitkyo/starter-nuxt">Mon dépot github</a>
 
+    <Countdown stop="true"/>
+
     </center>
   </main>
 </template>
