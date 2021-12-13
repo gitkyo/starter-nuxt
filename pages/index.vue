@@ -1,24 +1,10 @@
 <template>
   <main>
-    <center>
-
-    <NuxtLogo/>
-    <Menu/>
+    
     <Titre/>
-    
-
+    <Menu/>
+  
     
    
-   
-
-    
-
-    </center>
   </main>
 </template>
-
-<script>
-export default {
-
-}
-</script>
