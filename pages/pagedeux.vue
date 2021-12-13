@@ -12,7 +12,7 @@
 
         <!-- Pour faire une boucle  -->
         <!-- https://fr.vuejs.org/v2/guide/list.html -->
-        <li v-for="anime in responseObj.data" :key="anime">
+        <li v-for="(anime, id) in responseObj.data" :key="id">
             {{ anime.attributes.titles.en }} - <p>{{ anime.attributes.description }}</p>
         </li>
        
