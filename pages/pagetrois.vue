@@ -10,7 +10,7 @@
             <!-- liste de prodtuis depuis le tableau d'objet ci dessous  -->
             <h2>liste de produits depuis le tableau d'objet</h2>
             <ul id="v-for-object" class="demo">
-                <li v-for="produit in produits" :key='produit'>
+                <li v-for="(produit, id) in produits" :key="'A'+ id">
                     {{ produit.nom }} - {{ produit.prix }}
                 </li>
             </ul>
@@ -22,15 +22,15 @@
 
 
             <h2>liste de produits de type composant définit au travers de la liste d'objets</h2>
-            <Produit v-for="produit in produits" :key="produit.id" :nom="produit.nom" :prix="produit.prix" />
+            <Produit v-for="(produit, id)  in produits" :key="'B'+ id" :nom="produit.nom" :prix="produit.prix" />
 
 
             <h2>Liste de produits dispo </h2>
             <!-- de type composant appartenant à un autre obj avec écouteur sur le composant produit -->
-            <Produit v-for="produit in produits" :key="produit.id" :nom="produit.nom" :prix="produit.prix" v-on:commandes="ajouterProduit" role="commander"/>
+            <Produit v-for="(produit, id) in produits" :key="'C'+ id" :nom="produit.nom" :prix="produit.prix" v-on:commandes="ajouterProduit" role="commander"/>
 
             <h2>Liste de produits commandés</h2>
-            <Produit v-for="produit in commandes" :key="produit.id" :nom="produit.nom" :prix="produit.prix" role="affichage"/>
+            <Produit v-for="(produit, id) in commandes" :key="'D'+ id" :nom="produit.nom" :prix="produit.prix" role="affichage"/>
 
 
 
