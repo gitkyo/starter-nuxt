@@ -25,18 +25,18 @@
 </template>
 
 
-<style>
-    ul.nav{
-        margin: 30px 0 0 0px;
-    }
-    li.nav-item{
-        border: 1px solid black;
-         background-color:rgba(255, 255, 255, 0.6);
-    }
+<style lang="scss">   
+    
     .sectionMenu{
         position: relative;
         z-index: 2;
         top: 105px;  
-       
+        ul.nav{
+            margin: 30px 0 0 0px;
+            li.nav-item{
+                border: 1px solid black;
+                background-color:rgba(255, 255, 255, 0.6);
+            }
+        }
     }
 </style>

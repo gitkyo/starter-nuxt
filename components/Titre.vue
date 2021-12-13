@@ -39,7 +39,7 @@
     
 </template>
 
-<style scopped>
+<style scopped >
     h1 {
         color:rgb(98, 36, 197);
     
