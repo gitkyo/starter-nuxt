@@ -1,6 +1,6 @@
 <template>
     <main>
-        <NuxtLogo/>
+        
             <Menu/>
 
             <!-- todo : 23:42 : https://youtu.be/dY85oo6-9K0 -->

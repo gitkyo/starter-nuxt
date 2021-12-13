@@ -2,9 +2,7 @@
   <main>
     
     <Titre/>
-    <Menu/>
-  
-    
+    <Menu/>  
    
   </main>
 </template>

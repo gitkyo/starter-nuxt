@@ -31,6 +31,7 @@
         position: relative;
         z-index: 2;
         top: 105px;  
+        padding-bottom: 105px;
         ul.nav{
             margin: 30px 0 0 0px;
             li.nav-item{

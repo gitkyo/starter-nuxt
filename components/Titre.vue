@@ -10,6 +10,7 @@
         
         
         <div class="monKarousel ">
+        <!-- composant bootstrap vue : https://bootstrap-vue.org/docs -->
 
             <b-carousel
                 id="carousel-fade"
