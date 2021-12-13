@@ -7,7 +7,7 @@
         <center>
             <h1>Page trois</h1>
 
-            <!-- liste de prodtuis depuis le tableau d'objet ci dessous -->
+            <!-- liste de prodtuis depuis le tableau d'objet ci dessous  -->
             <h2>liste de produits depuis le tableau d'objet</h2>
             <ul id="v-for-object" class="demo">
                 <li v-for="produit in produits" :key='produit'>
@@ -22,11 +22,15 @@
 
 
             <h2>liste de produits de type composant définit au travers de la liste d'objets</h2>
-            <Produit v-for="produit in produits" :key="produit.id" :nom="produit.nom" :prix="produit.prix"  />
+            <Produit v-for="produit in produits" :key="produit.id" :nom="produit.nom" :prix="produit.prix" />
 
 
-            <h2>Liste de produits de type composant appartenant à un autre obj</h2>
-            <Produit v-for="produit in commandes" :key="produit.id" :nom="produit.nom" :prix="produit.prix" />
+            <h2>Liste de produits dispo </h2>
+            <!-- de type composant appartenant à un autre obj avec écouteur sur le composant produit -->
+            <Produit v-for="produit in produits" :key="produit.id" :nom="produit.nom" :prix="produit.prix" v-on:commandes="ajouterProduit" role="commander"/>
+
+            <h2>Liste de produits commandés</h2>
+            <Produit v-for="produit in commandes" :key="produit.id" :nom="produit.nom" :prix="produit.prix" role="affichage"/>
 
 
 
@@ -50,10 +54,15 @@ export default {
                  {id : 3, nom : 'sandwich', prix : 5.0},
             ],
             commandes:[
-                { id : 2, nom : 'burger', prix : 4.0  },
-                { id : 4, nom : 'tarte', prix : 1.0  }
+                { id : 0, nom : 'pizza', prix : 3.0  },
+                
             ]
             
+        }
+    },
+    methods:{
+        ajouterProduit(nom, prix){
+            this.commandes.push({nom:nom, prix:prix})
         }
     }    
 }
