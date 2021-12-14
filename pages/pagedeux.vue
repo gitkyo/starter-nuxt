@@ -12,7 +12,8 @@
         <!-- Pour faire une boucle  -->
         <!-- https://fr.vuejs.org/v2/guide/list.html -->
         <li v-for="(anime, id) in responseObj.data" :key="id">
-            {{ anime.attributes.titles.en }} - <p>{{ anime.attributes.description }}</p>
+           <!-- <img src={{ anime.attributes.posterImage.original }} alt=""> {{ anime.attributes.titles.en }}  -->
+           <img :src="anime.attributes.posterImage.original">
         </li>
        
         

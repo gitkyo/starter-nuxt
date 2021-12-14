@@ -3,7 +3,7 @@
         
             <Menu/>
 
-            <!-- todo : 23:42 : https://youtu.be/dY85oo6-9K0 -->
+            
         <center>
             <h1>Page trois</h1>
 
