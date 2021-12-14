@@ -1,7 +1,8 @@
 
 // ici la liste de totos est construite
-
 export const state = () => ({
+
+ 
   list: []
 })
 

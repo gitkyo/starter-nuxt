@@ -5,8 +5,8 @@
     <Menu/>  
     
     <!-- todo : je veux faire passer des data dans mon composant titre -->
-    <p>{{ $store.state }}</p>
-     <p>{{ responseObj.title_synonyms }}</p>
+    <p>Affichage du store : {{ $store.state }}</p>
+    <!-- <p>Affichage depuis un fetch json {{ responseObj.title_synonyms }}</p> -->
     
 
     <ul>
@@ -28,17 +28,19 @@ import { mapMutations } from 'vuex'
   export default {
     
     async asyncData({ $http }) {
+
+      // getIP();
       
         //doc usage http : https://http.nuxtjs.org/getting-started/usage        
-        const res = await $http.$get('https://api.jikan.moe/v3/anime/205')
+        // const res = await $http.$get('https://api.jikan.moe/v3/anime/205')
 
-        console.log(res) // log "nuxt"     
+        // console.log(res) // log "nuxt"     
 
-        return {
+        // return {
             
-          responseObj: res,
+        //   responseObj: res,
 
-        }
+        // }
     }
     ,
     computed: {

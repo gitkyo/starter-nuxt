@@ -3,15 +3,17 @@ import Vuex from 'vuex'
 
 
 
-export const state = () => ({
-  counter: 0
-})
+// export const state = () => ({
+//   counter: 0
+// })
 
-export const mutations = {
-  increment(state) {
-    state.counter++
-  }
-}
+// export const mutations = {
+//   increment(state) {
+//     state.counter++
+//   }
+// }
+
+
 
 new Vuex.Store({
   state: () => ({
@@ -46,3 +48,4 @@ new Vuex.Store({
     }
   }
 })
+
