@@ -17,7 +17,9 @@
             </NuxtLink>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Page quatre</a>
+            <NuxtLink to="/todo">
+                <a class="nav-link" href="#">Page quatre</a>
+            </NuxtLink>
         </li>
         </ul>
     </div>

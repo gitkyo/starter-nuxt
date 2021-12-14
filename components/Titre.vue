@@ -61,3 +61,19 @@
         width: 100%;
     }
 </style>
+
+
+
+<script> 
+
+export default {
+  
+    data() {       
+        return {
+            store: '$store'
+            
+        }
+    },
+      
+}
+</script>   

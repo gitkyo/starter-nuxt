@@ -16,20 +16,33 @@
 
 <script>
 
+import store from '../store/index.js'
 
 
   export default {
+
+    
+
+    
     async asyncData({ $http }) {
+      
+      
 
         //doc usage http : https://http.nuxtjs.org/getting-started/usage        
         const res = await $http.$get('https://api.jikan.moe/v3/anime/205')
 
-        console.log(res) // log "nuxt"        
+        console.log(res) // log "nuxt"     
+        
+        // store.commit('increment')
+
+        // console.log(store.state.count) // -> 
 
         return {
             responseObj: res,
             
         }
     }
+
+    
   }
 </script>  
