@@ -14,12 +14,13 @@
                 <form name="contact" method="POST" data-netlify="true">
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" value="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-group">
                     <label for="Message">Message</label>            
-                    <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" name="Message" value="message" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div> 
                 <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
