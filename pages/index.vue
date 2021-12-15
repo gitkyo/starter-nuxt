@@ -5,14 +5,15 @@
     <Menu/>  
     
     <!-- todo : je veux faire passer des data dans mon composant titre -->
-    <p>Affichage du store : </p>
+    <!-- <p>Affichage du store : </p> -->
+    <!-- <pre>{{animes.animes}}</pre> -->
     <!-- <pre v-if="animes.animes[0] != null">
       {{ animes.animes[0].image_url }}
     </pre> -->
 
     <!-- <ul>
       <li v-for="(anime, id) in animes.animes" :key="id">
-          {{ anime.image_url }}
+          {{ anime }}
       </li>
     </ul> -->
     

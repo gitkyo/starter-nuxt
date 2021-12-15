@@ -9,7 +9,7 @@ export const mutations = {
 
   addAnime(state, res) {  
     
-    console.log(state)
+    // console.log(state)
         
     state.animes.push(res)
 
@@ -23,9 +23,9 @@ export const actions = {
 
   async getAnimeList( { commit }  ){
 
-    let res = await this.$http.$get('https://api.jikan.moe/v3/anime/205')
-    let res1 = await this.$http.$get('https://api.jikan.moe/v3/anime/43')
-    let res2 = await this.$http.$get('https://api.jikan.moe/v3/anime/4672')
+    let res = await this.$http.$get('https://kitsu.io/api/edge/anime/181')
+    let res1 = await this.$http.$get('https://kitsu.io/api/edge/anime/10')
+    let res2 = await this.$http.$get('https://kitsu.io/api/edge/anime/183')
 
     // console.log(res) // log "nuxt" 
     
@@ -34,9 +34,9 @@ export const actions = {
 
 
     //appel de la mutation addAnime
-    commit('addAnime', res)
-    commit('addAnime', res1)
-    commit('addAnime', res2)
+    commit('addAnime', res.data)
+    commit('addAnime', res1.data)
+    commit('addAnime', res2.data)
 
 
     

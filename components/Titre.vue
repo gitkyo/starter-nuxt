@@ -20,7 +20,7 @@
             >
                 <b-carousel-slide v-for="(anime, id) in animes.animes" :key="id"
                     caption="First slide"                    
-                    :img-src="anime.image_url"
+                    :img-src="anime.attributes.coverImage.original"
                 >
                 </b-carousel-slide>
             </b-carousel>
