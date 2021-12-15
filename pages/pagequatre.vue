@@ -50,7 +50,7 @@
                         <button>Submit</button>
                     </form> -->
                     
-                    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
 						<div class="form-group">
 						  <label for="exampleInputEmail1">Votre Email</label>
 						  <input type="email" name="email" value="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -60,7 +60,7 @@
 						  <label for="exampleInputPassword1">Votre nom</label>
 						  <input name="nom" type="text" value="" class="form-control" id="exampleInputPassword1" placeholder="">
 						</div>		
-                        <input type='hidden' name='form-name' />
+                        <input type='hidden' name='form-name' value="contact" />
 						<p>
 							
 						</p>
