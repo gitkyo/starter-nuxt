@@ -20,12 +20,9 @@
                         <textarea name="message"></textarea>
                     </form> -->
 
-                    <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
-                        <input type="text" name="name" />
-                        <input type="radio" name="panelist" />
-                        <textarea name="question"></textarea>
-                    </form>
-                  
+                   
+                    <FormContact/>
+                    
                     <!-- <form
                         name="ask-question"
                         method="post"
