@@ -23,9 +23,13 @@ export const actions = {
 
   async getAnimeList( { commit }  ){
 
+    
+    //Champloo
     let res = await this.$http.$get('https://kitsu.io/api/edge/anime/181')
+    //Monster
     let res1 = await this.$http.$get('https://kitsu.io/api/edge/anime/10')
-    let res2 = await this.$http.$get('https://kitsu.io/api/edge/anime/183')
+    //FMA
+    let res2 = await this.$http.$get('https://kitsu.io/api/edge/anime/100')
 
     // console.log(res) // log "nuxt" 
     

@@ -10,16 +10,17 @@
         
         
         <div class="monKarousel ">
-        <!-- composant bootstrap vue : https://bootstrap-vue.org/docs -->
+        <!-- composant bootstrap vue : https://bootstrap-vue.org/docs/components/carousel -->
 
             <b-carousel 
                 id="carousel-fade"
                 style="text-shadow: 0px 0px 2px #000"
                 fade
-                indicators        
+                indicators     
+                
             >
                 <b-carousel-slide v-for="(anime, id) in animes.animes" :key="id"
-                    caption="First slide"                    
+                    :caption="anime.attributes.titles.ja_jp"                    
                     :img-src="anime.attributes.coverImage.original"
                 >
                 </b-carousel-slide>
@@ -50,7 +51,7 @@
         z-index: 2;
         position: absolute;
         width: 100%;
-    }
+    }    
 </style>
 
 
