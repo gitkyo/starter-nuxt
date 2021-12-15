@@ -20,7 +20,13 @@
                         <textarea name="message"></textarea>
                     </form> -->
 
-                    <form
+                    <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
+                        <input type="text" name="name" />
+                        <input type="radio" name="panelist" />
+                        <textarea name="question"></textarea>
+                    </form>
+                  
+                    <!-- <form
                         name="ask-question"
                         method="post"
                         data-netlify="true"
@@ -37,13 +43,15 @@
                             />
                             <span>{{ panelist }}</span>
                         </label>
+                        
                         <div class="form-group">
 						  <label for="exampleInputEmail1">Votre Email</label>
 						  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 						  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 						</div>
+                        
                         <button>Submit</button>
-                    </form>
+                    </form> -->
                     
                     <!-- <form name="contact" netlify netlify-honeypot="bot-field">
 						<div class="form-group">
@@ -69,18 +77,7 @@
 
         
 
-        <!-- <form name="contact" netlify>
-        <p>
-        <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-        <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-        <button type="submit">Send</button>
-        </p>
-        </form> -->
-        
+             
        
         
         <!-- <li v-for="anime in animes" :key="anime.id">
@@ -94,6 +91,11 @@
 </template>
 
 <script>
+
+// form integration  : https://docs.netlify.com/forms/setup/
+// https://www.netlify.com/blog/2018/09/07/how-to-integrate-netlify-forms-in-a-vue-app/
+
+
 export default {
     data(){
         return{
