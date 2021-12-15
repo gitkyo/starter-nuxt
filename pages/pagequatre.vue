@@ -50,13 +50,13 @@
                         <button>Submit</button>
                     </form> 
                     
-                    data-netlify="true" 
-                        data-netlify-honeypot="bot-field"
+                    
                         
                         -->
                     
                     <form name="contact" method="POST" 
-                        
+                        data-netlify="true" 
+                        data-netlify-honeypot="bot-field"
                         >
 						<div class="form-group">
 						  <label for="exampleInputEmail1">Votre Email</label>
@@ -70,7 +70,7 @@
                             
 
                             <input type="hidden" :value="this.$route.path">
-                            <!-- <input type='hidden' name='form-name' value="contact" /> -->
+                            <input type='hidden' name='form-name' value="contact" />
 						<p>							
 						</p>
 						<button type="submit" class="btn btn-primary">Envoyer</button>
