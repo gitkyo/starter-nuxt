@@ -6,7 +6,7 @@
         
         <h1>page quatre</h1>
 
-        <p>list d'anime enregistré dans store</p>
+        <p>list d'animees depuis le store...todo</p>
         
        
         <ul>
@@ -34,11 +34,7 @@ export default {
             
         }
     },
-    //appele au chargement de la page         
-    mounted(){        
-        //appel de l'action du store "getAnimeList" de manière async
-        this.$store.dispatch("animes/getAnimeList")        
-    }
+    
 }
 </script>
 
