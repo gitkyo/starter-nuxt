@@ -17,6 +17,10 @@ $ npm run start
 $ npm run generate
 ```
 
+# Usage
+Appeler des json avec http : https://http.nuxtjs.org/
+ou avec Axios : https://axios.nuxtjs.org/
+
 # DEMO
 https://starter-nuxt.netlify.app/
 

@@ -5,17 +5,19 @@
     <Menu/>  
     
     <!-- todo : je veux faire passer des data dans mon composant titre -->
-    <p>Affichage du store : {{ $store.state }}</p>
+    <p>Affichage du store : {{ this.$store.state.animes }}</p>
     <!-- <p>Affichage depuis un fetch json {{ responseObj.title_synonyms }}</p> -->
     
 
-    <ul>
+    <!-- <ul>
     <li v-for="todo in todos" :key="todo.text">
       <input :checked="todo.done" @change="toggle(todo)" type="checkbox">
       <span :class="{ done: todo.done }">{{ todo.text }}</span>
     </li>
     <li><input @keyup.enter="addTodo" placeholder="What needs to be done?"></li>
-  </ul>
+  </ul> -->
+
+  
    
   </main>
 </template>
@@ -24,10 +26,12 @@
 
 
 <script>
-import { mapMutations } from 'vuex'
+
   export default {
+
+   
     
-    async asyncData({ $http }) {
+    // async asyncData({ $http }) {
 
       // getIP();
       
@@ -41,24 +45,9 @@ import { mapMutations } from 'vuex'
         //   responseObj: res,
 
         // }
-    }
-    ,
-    computed: {
-      todos () {
-        return this.$store.state.todos.list
-      }
-    },
-    methods: {
-      addTodo (e) {
-        this.$store.commit('todos/add', responseObj.title_synonyms)
-        e.target.value = ''
-      },
-      ...mapMutations({
-        toggle: 'todos/toggle'
-      }),
-
-      
-    }
+    // }
+    
+  
 
     
   }

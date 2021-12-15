@@ -1,51 +1,32 @@
+// store/index.js
 
-import Vuex from 'vuex'
-
-
-
-// export const state = () => ({
-//   counter: 0
-// })
-
-// export const mutations = {
-//   increment(state) {
-//     state.counter++
-//   }
-// }
-
-
-
-new Vuex.Store({
-  state: () => ({
-    counter: 0
-  }),
-    
-  mutations: {
-    increment(state) {
-      state.counter++
-    }
-  },
-  modules: {
-    todos: {
-      namespaced: true,
-      state: () => ({
-        list: []
-      }),
-      mutations: {
-        add(state, { text }) {
-          state.list.push({
-            text,
-            done: false
-          })
-        },
-        remove(state, { todo }) {
-          state.list.splice(state.list.indexOf(todo), 1)
-        },
-        toggle(state, { todo }) {
-          todo.done = !todo.done
-        }
-      }
-    }
-  }
+export const state = () => ({
+    animes: []
 })
 
+export const mutations = {
+
+    addAnime(state, res) {        
+        
+        state.animes = res
+
+    }
+    
+}
+
+export const actions = {
+
+    async getAnimeList( { commit }  ){
+
+        let res = await this.$http.$get('https://api.jikan.moe/v3/anime/205')
+        console.log(res) // log "nuxt"    
+    
+        //appel de la mutation addAnime
+        commit('addAnime', res)
+        
+    }
+    
+
+}
+
+export const getters = {}
