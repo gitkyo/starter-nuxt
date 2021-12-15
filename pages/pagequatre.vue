@@ -1,5 +1,6 @@
 <template>
  <main>
+     
   <Menu/>
     <center>
 
@@ -10,7 +11,7 @@
 
             <div class="offset-lg-4 col-lg-4">
 
-                <form name="contact" netlify>
+                <form name="contact" method="POST" data-netlify="true">
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
