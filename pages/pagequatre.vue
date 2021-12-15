@@ -68,6 +68,8 @@
 						  <input name="nom" type="text" value="" class="form-control" id="exampleInputPassword1" placeholder="">
 						</div>		
                             
+
+                            <input type="hidden" :value="this.$route.path">
                             <!-- <input type='hidden' name='form-name' value="contact" /> -->
 						<p>							
 						</p>
