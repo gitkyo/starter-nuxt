@@ -16,8 +16,7 @@
                 id="carousel-fade"
                 style="text-shadow: 0px 0px 2px #000"
                 fade
-                indicators     
-                
+                indicators
             >
                 <b-carousel-slide v-for="(anime, id) in animes.animes" :key="id"
                     :caption="anime.attributes.titles.ja_jp"                    
