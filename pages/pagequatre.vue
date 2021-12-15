@@ -21,7 +21,7 @@
                     </form> -->
 
                    
-                    <FormContact/>
+                    <!-- <FormContact/> -->
                     
                     <!-- <form
                         name="ask-question"
@@ -50,7 +50,7 @@
                         <button>Submit</button>
                     </form> -->
                     
-                    <!-- <form name="contact" netlify netlify-honeypot="bot-field">
+                    <form name="contact" netlify netlify-honeypot="bot-field">
 						<div class="form-group">
 						  <label for="exampleInputEmail1">Votre Email</label>
 						  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -60,11 +60,12 @@
 						  <label for="exampleInputPassword1">Votre nom</label>
 						  <input name="nom" type="text" class="form-control" id="exampleInputPassword1" placeholder="">
 						</div>		
+                        <input type='hidden' name='contact' value='contactNuh' />
 						<p>
 							
 						</p>
 						<button type="submit" class="btn btn-primary">Envoyer</button>
-					</form>  -->
+					</form> 
                    
 
                     
