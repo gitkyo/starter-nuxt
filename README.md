@@ -21,6 +21,10 @@ $ npm run generate
 Appeler des json avec http : https://http.nuxtjs.org/
 ou avec Axios : https://axios.nuxtjs.org/
 
+
+Utiliser le SCSS : 
+><style lang="scss">
+
 # DEMO
 https://starter-nuxt.netlify.app/
 
