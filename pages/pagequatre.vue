@@ -70,7 +70,7 @@
                             
 
                             <input type="hidden" :value="this.$route.path">
-                            <input type='hidden' name='form-name' value="contact" />
+                            <input type="hidden" name="form-name" value="form-value" />
 						<p>							
 						</p>
 						<button type="submit" class="btn btn-primary">Envoyer</button>
