@@ -1,3 +1,5 @@
+
+
 <template>
     
     <main>
@@ -11,6 +13,10 @@
 
 
 <script>
+// TODO
+// Créer un obj Anime a ré-utiliser
+
+
 // export default {
 //     name : "Anime",    
 //     methods: {

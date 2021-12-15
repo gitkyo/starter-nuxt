@@ -1,27 +1,32 @@
 // store/animes.js
 
-export const state = () => ({
-  // animes: [],
+export const state = () => ({  
+  animes: []
 })
 
 export const mutations = {
+
+  addAnime(state, res) {        
+        
+    state.animes = res
+
+  }
   
-  // addFruit(state, fruit) {
-  //     state.animes.push(fruit)
-  // },
-  // removeFruit(state, fruitId) {
-  //     state.animes = state.animes.filter((fruit) => fruit.id !== fruitId)
-  // },
 }
 
 
-
 export const actions = {
+
+  async getAnimeList( { commit }  ){
+
+    let res = await this.$http.$get('https://api.jikan.moe/v3/anime/205')
+    console.log(res) // log "nuxt"    
+
+    //appel de la mutation addAnime
+    commit('addAnime', res)
+    
+  }
   
-  // addFruit(context, fruit) {
-  //     const slicedFruit = sliceFruit(fruit)
-  //     context.commit(slicedFruit)
-  // },
   
 }
 

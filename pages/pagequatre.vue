@@ -37,7 +37,7 @@ export default {
     //appele au chargement de la page         
     mounted(){        
         //appel de l'action du store "getAnimeList" de manière async
-        this.$store.dispatch("getAnimeList")        
+        this.$store.dispatch("animes/getAnimeList")        
     }
 }
 </script>

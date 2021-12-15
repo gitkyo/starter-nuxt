@@ -68,12 +68,12 @@
 
 export default {
   
-    // data() {       
-    //     return {
-    //         store: '$store'
+    data() {       
+        return {
+            store: $store
             
-    //     }
-    // },
+        }
+    },
       
 }
 </script>   
