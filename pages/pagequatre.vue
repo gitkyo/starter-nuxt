@@ -7,27 +7,29 @@
         
         <h1>Contact</h1>
 
-        <div class="row">
+        <p>Formulaire de contact bootstrap connecté à netlify :</p>
 
-            <div class="offset-lg-4 col-lg-4">
-
-                <form name="contact" method="POST" data-netlify="true">
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" value="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <input type="hidden" name="form-name" value="contact">
-                <div class="form-group">
-                    <label for="Message">Message</label>            
-                    <textarea class="form-control" name="Message" value="message" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div> 
-                <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            
-            </div> 
-
-        </div>
+		<div class="container">
+			<div class="row">
+				<div class="offset-md-4 col-md-4">
+					<form name="contact" method="POST" data-netlify="true">
+						<div class="form-group">
+						  <label for="exampleInputEmail1">Votre Email</label>
+						  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+						  <label for="exampleInputPassword1">Votre nom</label>
+						  <input name="nom" type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+						</div>		
+						<p>
+							
+						</p>
+						<button type="submit" class="btn btn-primary">Envoyer</button>
+					  </form>
+				</div>				
+			</div>
+		</div>
 
         
 
