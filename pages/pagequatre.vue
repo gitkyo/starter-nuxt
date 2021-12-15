@@ -55,8 +55,8 @@
                         -->
                     
                     <form name="contact" method="POST" 
-                        data-netlify="true" 
-                        data-netlify-honeypot="bot-field"
+                        netlify="true" 
+                        netlify-honeypot="bot-field"
                         >
 						<div class="form-group">
 						  <label for="exampleInputEmail1">Votre Email</label>
