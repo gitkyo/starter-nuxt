@@ -50,17 +50,17 @@
                         <button>Submit</button>
                     </form> -->
                     
-                    <form name="contact" netlify netlify-honeypot="bot-field">
+                    <form name="contactNuh" netlify netlify-honeypot="bot-field">
 						<div class="form-group">
 						  <label for="exampleInputEmail1">Votre Email</label>
-						  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  <input type="email" name="email" value="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 						  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 						</div>
 						<div class="form-group">
 						  <label for="exampleInputPassword1">Votre nom</label>
-						  <input name="nom" type="text" class="form-control" id="exampleInputPassword1" placeholder="">
+						  <input name="nom" type="text" value="" class="form-control" id="exampleInputPassword1" placeholder="">
 						</div>		
-                        <input type='hidden' name='contact' value='contactNuh' />
+                        <input type='hidden' name='contactNuh' value='contactNuh' />
 						<p>
 							
 						</p>
